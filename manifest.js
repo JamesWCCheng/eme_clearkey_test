@@ -61,7 +61,7 @@ function TimeStamp(token) {
 }
 
 function Log(token, msg) {
-  info(TimeStamp(token) + " " + msg);
+  console.log(TimeStamp(token) + " " + msg);
 }
 
 // Number of tests to run in parallel.
