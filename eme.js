@@ -74,7 +74,8 @@ function HexToBase64(hex)
   for (var i = 0; i < hex.length; i += 2) {
     bin += String.fromCharCode(parseInt(hex.substr(i, 2), 16));
   }
-  return window.btoa(bin).replace(/=/g, "").replace(/\+/g, "-").replace(/\//g, "_");
+  //return window.btoa(bin).replace(/=/g, "").replace(/\+/g, "-").replace(/\//g, "_");
+  return window.btoa(bin).replace(/=/g, "").replace(/\//g, "_");
 }
 
 function TimeRangesToString(trs)
